@@ -1,69 +1,69 @@
 package colors
 
 import (
-	"github.com/vutran/fansi"
+	"github.com/vutran/ansi"
 )
 
 func Black(value string) string {
-	return fansi.Black() + value + fansi.DefaultColor()
+	return ansi.Black() + value + ansi.DefaultColor()
 }
 
 func Red(value string) string {
-	return fansi.Red() + value + fansi.DefaultColor()
+	return ansi.Red() + value + ansi.DefaultColor()
 }
 
 func Green(value string) string {
-	return fansi.Green() + value + fansi.DefaultColor()
+	return ansi.Green() + value + ansi.DefaultColor()
 }
 
 func Yellow(value string) string {
-	return fansi.Yellow() + value + fansi.DefaultColor()
+	return ansi.Yellow() + value + ansi.DefaultColor()
 }
 
 func Blue(value string) string {
-	return fansi.Blue() + value + fansi.DefaultColor()
+	return ansi.Blue() + value + ansi.DefaultColor()
 }
 
 func Magenta(value string) string {
-	return fansi.Magenta() + value + fansi.DefaultColor()
+	return ansi.Magenta() + value + ansi.DefaultColor()
 }
 
 func Cyan(value string) string {
-	return fansi.Cyan() + value + fansi.DefaultColor()
+	return ansi.Cyan() + value + ansi.DefaultColor()
 }
 
 func White(value string) string {
-	return fansi.White() + value + fansi.DefaultColor()
+	return ansi.White() + value + ansi.DefaultColor()
 }
 
 func BlackBg(value string) string {
-	return fansi.BlackBg() + value + fansi.DefaultBg()
+	return ansi.BlackBg() + value + ansi.DefaultBg()
 }
 
 func RedBg(value string) string {
-	return fansi.RedBg() + value + fansi.DefaultBg()
+	return ansi.RedBg() + value + ansi.DefaultBg()
 }
 
 func GreenBg(value string) string {
-	return fansi.GreenBg() + value + fansi.DefaultBg()
+	return ansi.GreenBg() + value + ansi.DefaultBg()
 }
 
 func YellowBg(value string) string {
-	return fansi.YellowBg() + value + fansi.DefaultBg()
+	return ansi.YellowBg() + value + ansi.DefaultBg()
 }
 
 func BlueBg(value string) string {
-	return fansi.BlueBg() + value + fansi.DefaultBg()
+	return ansi.BlueBg() + value + ansi.DefaultBg()
 }
 
 func MagentaBg(value string) string {
-	return fansi.MagentaBg() + value + fansi.DefaultBg()
+	return ansi.MagentaBg() + value + ansi.DefaultBg()
 }
 
 func CyanBg(value string) string {
-	return fansi.CyanBg() + value + fansi.DefaultBg()
+	return ansi.CyanBg() + value + ansi.DefaultBg()
 }
 
 func WhiteBg(value string) string {
-	return fansi.WhiteBg() + value + fansi.DefaultBg()
+	return ansi.WhiteBg() + value + ansi.DefaultBg()
 }

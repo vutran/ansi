@@ -1,25 +1,25 @@
 package styles
 
 import (
-	"github.com/vutran/fansi"
+	"github.com/vutran/ansi"
 )
 
 func Bold(value string) string {
-	return fansi.Bold() + value + fansi.BoldOff()
+	return ansi.Bold() + value + ansi.BoldOff()
 }
 
 func Faint(value string) string {
-	return fansi.Faint() + value + fansi.FaintOff()
+	return ansi.Faint() + value + ansi.FaintOff()
 }
 
 func Italic(value string) string {
-	return fansi.Italic() + value + fansi.ItalicOff()
+	return ansi.Italic() + value + ansi.ItalicOff()
 }
 
 func Underline(value string) string {
-	return fansi.Underline() + value + fansi.UnderlineOff()
+	return ansi.Underline() + value + ansi.UnderlineOff()
 }
 
 func CrossedOut(value string) string {
-	return fansi.CrossedOut() + value + fansi.CrossedOutOff()
+	return ansi.CrossedOut() + value + ansi.CrossedOutOff()
 }

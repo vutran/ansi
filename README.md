@@ -1,4 +1,4 @@
-# fansi
+# ansi
 
 > ANSI utilities
 
@@ -7,7 +7,7 @@
 To get started, you need a working Go environment. Once available, grab the package here:
 
 ```
-$ go get github.com/vutran/fansi
+$ go get github.com/vutran/ansi
 ```
 
 ## Usage
@@ -28,7 +28,7 @@ Simple functions to apply a style to a string of text.
 package main
 
 import (
-	"github.com/vutran/fansi/styles"
+	"github.com/vutran/ansi/styles"
 )
 
 func main() {
@@ -45,7 +45,7 @@ Simple functions to apply a foreground or background color to a string of text.
 package main
 
 import (
-	"github.com/vutran/fansi/colors"
+	"github.com/vutran/ansi/colors"
 )
 
 func main() {
@@ -62,8 +62,8 @@ You can mix and decorate your however you prefer.
 package main
 
 import (
-	"github.com/vutran/fansi/colors"
-	"github.com/vutran/fansi/styles"
+	"github.com/vutran/ansi/colors"
+	"github.com/vutran/ansi/styles"
 )
 
 func main() {

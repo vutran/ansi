@@ -1,4 +1,4 @@
-package fansi
+package ansi
 
 import (
 	"strconv"

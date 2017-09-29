@@ -1,3 +1,3 @@
-package fansi
+package ansi
 
 const Esc = "\u001B"

@@ -1,4 +1,4 @@
-package fansi
+package ansi
 
 func Reset() string {
 	return SelectGraphicsRendition(0)
