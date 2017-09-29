@@ -4,10 +4,14 @@ import (
 	"strconv"
 )
 
-const EraseDisplay = Esc + "2J"
+func EraseDisplay(code int) string {
+	return Esc + "[" + strconv.Itoa(code) + "2J"
+}
 
-const EraseLine = Esc + "K"
+func EraseLine(code int) string {
+	return Esc + "[" + strconv.Itoa(code) + "K"
+}
 
 func SelectGraphicsRendition(code int) string {
-	return Esc + strconv.Itoa(code) + "m"
+	return Esc + "[" + strconv.Itoa(code) + "m"
 }

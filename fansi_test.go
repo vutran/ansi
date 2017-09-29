@@ -5,7 +5,7 @@ import (
 )
 
 func TestEsc(t *testing.T) {
-	if Esc != "\u001b[" {
+	if Esc != "\u001b" {
 		t.Error("Esc code incorrect")
 	}
 }

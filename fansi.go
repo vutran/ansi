@@ -1,3 +1,3 @@
 package fansi
 
-const Esc = "\u001B["
+const Esc = "\u001B"
