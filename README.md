@@ -56,7 +56,7 @@ func main() {
 
 ### Mix and Match
 
-You can mix and decorate your however you prefer.
+You can mix and decorate your text however you prefer.
 
 ```go
 package main
