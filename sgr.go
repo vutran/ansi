@@ -72,3 +72,75 @@ func CrossedOut() string {
 func CrossedOutOff() string {
 	return SelectGraphicsRendition(29)
 }
+
+func DefaultColor() string {
+	return SelectGraphicsRendition(39)
+}
+
+func Black() string {
+	return SelectGraphicsRendition(30)
+}
+
+func Red() string {
+	return SelectGraphicsRendition(31)
+}
+
+func Green() string {
+	return SelectGraphicsRendition(32)
+}
+
+func Yellow() string {
+	return SelectGraphicsRendition(33)
+}
+
+func Blue() string {
+	return SelectGraphicsRendition(34)
+}
+
+func Magenta() string {
+	return SelectGraphicsRendition(35)
+}
+
+func Cyan() string {
+	return SelectGraphicsRendition(36)
+}
+
+func White() string {
+	return SelectGraphicsRendition(37)
+}
+
+func DefaultBg() string {
+	return SelectGraphicsRendition(49)
+}
+
+func BlackBg() string {
+	return SelectGraphicsRendition(40)
+}
+
+func RedBg() string {
+	return SelectGraphicsRendition(41)
+}
+
+func GreenBg() string {
+	return SelectGraphicsRendition(42)
+}
+
+func YellowBg() string {
+	return SelectGraphicsRendition(43)
+}
+
+func BlueBg() string {
+	return SelectGraphicsRendition(44)
+}
+
+func MagentaBg() string {
+	return SelectGraphicsRendition(45)
+}
+
+func CyanBg() string {
+	return SelectGraphicsRendition(46)
+}
+
+func WhiteBg() string {
+	return SelectGraphicsRendition(47)
+}
