@@ -20,6 +20,23 @@ To be documented.
 
 To be documented.
 
+### Style
+
+Simple functions to apply a style to a string of text.
+
+```
+package main
+
+import (
+	"github.com/vutran/fansi/styles"
+)
+
+func main() {
+	msg: = styles.Bold("Hello, world")
+	fmt.Print(msg)
+}
+```
+
 ### Colors
 
 Simple functions to apply a foreground or background color to a string of text.
@@ -33,8 +50,25 @@ import (
 
 func main() {
 	msg := colors.Blue("Hello, world")
-	msg = colors.YellowBg(msg)
+	fmt.Print(msg)
+}
+```
 
+### Mix and Match
+
+You can mix and decorate your however you prefer.
+
+```
+package main
+
+import (
+	"github.com/vutran/fansi/colors"
+	"github.com/vutran/fansi/styles"
+)
+
+func main() {
+	// bold, blue text
+	msg := styles.Bold(colors.Blue("Hello, world"))
 	fmt.Print(msg)
 }
 ```
