@@ -24,7 +24,7 @@ To be documented.
 
 Simple functions to apply a style to a string of text.
 
-```
+```go
 package main
 
 import (
@@ -41,7 +41,7 @@ func main() {
 
 Simple functions to apply a foreground or background color to a string of text.
 
-```
+```go
 package main
 
 import (
@@ -58,7 +58,7 @@ func main() {
 
 You can mix and decorate your however you prefer.
 
-```
+```go
 package main
 
 import (
