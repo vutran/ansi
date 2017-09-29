@@ -4,9 +4,13 @@ import (
 	"strconv"
 )
 
-const HideCursor = Esc + "[?25l"
+func HideCursor() string {
+	return Esc + "[?25l"
+}
 
-const ShowCursor = Esc + "[?25h"
+func ShowCursor() string {
+	return Esc + "[?25h"
+}
 
 func CursorUp(value int) string {
 	return Esc + "[" + strconv.Itoa(value) + "A"
@@ -24,8 +28,14 @@ func CursorBackward(value int) string {
 	return Esc + "[" + strconv.Itoa(value) + "D"
 }
 
-const SaveCursorPosition = Esc + "[s"
+func SaveCursorPosition() string {
+	return Esc + "[s"
+}
 
-const RestoreCursorPosition = Esc + "[u"
+func RestoreCursorPosition() string {
+	return Esc + "[u"
+}
 
-const GetCursorPosition = Esc + "[6n"
+func GetCursorPosition() string {
+	return Esc + "[6n"
+}
