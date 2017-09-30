@@ -28,6 +28,10 @@ func CursorBackward(value int) string {
 	return Esc + "[" + strconv.Itoa(value) + "D"
 }
 
+func CursorStart(value int) string {
+	return Esc + "[" + strconv.Itoa(value) + "G"
+}
+
 func SaveCursorPosition() string {
 	return Esc + "[s"
 }
