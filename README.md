@@ -68,7 +68,7 @@ import (
 )
 
 func main() {
-	s := ansi.Loader(loaders.Dots)
+	s := ansi.Loader(loaders.Dots, 100)
 	s.SetValue("Loading")
 	s.Start()
 	time.Sleep(2 * time.Second)

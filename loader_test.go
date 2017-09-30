@@ -18,7 +18,7 @@ var styles = [][]string{
 }
 
 func run(loader []string) {
-	s := ansi.Loader(loader)
+	s := ansi.Loader(loader, 100)
 	s.SetValue("Loading")
 	s.Start()
 	time.Sleep(1 * time.Second)

@@ -11,7 +11,7 @@ func cleanup() {
 	fmt.Print(ShowCursor())
 }
 
-// LoaderControl contains options for the spinner
+// LoaderControl holds internal data for the loader
 type LoaderControl struct {
 	anim   []string     // The animation sprite list
 	value  string       // The label value
@@ -56,14 +56,14 @@ func (loader *LoaderControl) SetValue(value string) {
 	loader.value = value
 }
 
-// Loader creates a new loader
-func Loader(anim []string) *LoaderControl {
+// Loader creates a new loader with the given `anim` that animates at the specified `speed`
+func Loader(anim []string, speed int) *LoaderControl {
 	return &LoaderControl{
 		cursor: 0,
 		anim:   anim,
 		value:  "",
 		max:    len(anim),
-		ticker: time.NewTicker(time.Millisecond * 100),
+		ticker: time.NewTicker(time.Millisecond * time.Duration(speed)),
 		done:   make(chan bool),
 	}
 }
