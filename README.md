@@ -78,6 +78,15 @@ func main() {
 }
 ```
 
+#### Available Loaders
+
+- Circle
+- Clock
+- Dots
+- Lines
+- Moon
+- Triangle
+
 ### Mix and Match
 
 You can mix and decorate your text however you prefer.

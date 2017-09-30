@@ -1,84 +1,85 @@
-package ansi
+package ansi_test
 
 import (
 	"fmt"
+	"github.com/vutran/ansi"
 	"testing"
 )
 
 func TestBold(t *testing.T) {
-	fmt.Print(Bold())
+	fmt.Print(ansi.Bold())
 	fmt.Println("This should be bold")
-	fmt.Print(BoldOff())
+	fmt.Print(ansi.BoldOff())
 }
 
 func TestFaint(t *testing.T) {
-	fmt.Print(Faint())
+	fmt.Print(ansi.Faint())
 	fmt.Println("This should be faint")
-	fmt.Print(FaintOff())
+	fmt.Print(ansi.FaintOff())
 }
 
 func TestItalic(t *testing.T) {
-	fmt.Print(Italic())
+	fmt.Print(ansi.Italic())
 	fmt.Println("This should be italic")
-	fmt.Print(ItalicOff())
+	fmt.Print(ansi.ItalicOff())
 }
 
 func TestUnderline(t *testing.T) {
-	fmt.Print(Underline())
+	fmt.Print(ansi.Underline())
 	fmt.Println("This should be underline")
-	fmt.Print(UnderlineOff())
+	fmt.Print(ansi.UnderlineOff())
 }
 
 func TestCrossedOut(t *testing.T) {
-	fmt.Print(CrossedOut())
+	fmt.Print(ansi.CrossedOut())
 	fmt.Println("This should be crossed-out")
-	fmt.Print(CrossedOutOff())
+	fmt.Print(ansi.CrossedOutOff())
 }
 
 func TestBlackWithWhiteBg(t *testing.T) {
-	fmt.Print(Black() + WhiteBg())
+	fmt.Print(ansi.Black() + ansi.WhiteBg())
 	fmt.Println("This should be black with a white background")
-	fmt.Print(DefaultColor() + DefaultBg())
+	fmt.Print(ansi.DefaultColor() + ansi.DefaultBg())
 }
 
 func TestWhiteWithBlackBg(t *testing.T) {
-	fmt.Print(White() + BlackBg())
+	fmt.Print(ansi.White() + ansi.BlackBg())
 	fmt.Println("This should be white with a black background")
-	fmt.Print(DefaultColor() + DefaultBg())
+	fmt.Print(ansi.DefaultColor() + ansi.DefaultBg())
 }
 
 func TestRedWithYellowBg(t *testing.T) {
-	fmt.Print(Red() + YellowBg())
+	fmt.Print(ansi.Red() + ansi.YellowBg())
 	fmt.Println("This should be red with a yellow background")
-	fmt.Print(DefaultColor() + DefaultBg())
+	fmt.Print(ansi.DefaultColor() + ansi.DefaultBg())
 }
 
 func TestYellowWithRedBg(t *testing.T) {
-	fmt.Print(Yellow() + RedBg())
+	fmt.Print(ansi.Yellow() + ansi.RedBg())
 	fmt.Println("This should be yellow with a red background")
-	fmt.Print(DefaultColor() + DefaultBg())
+	fmt.Print(ansi.DefaultColor() + ansi.DefaultBg())
 }
 
 func TestBlueWithGreenBg(t *testing.T) {
-	fmt.Print(Blue() + GreenBg())
+	fmt.Print(ansi.Blue() + ansi.GreenBg())
 	fmt.Println("This should be blue with a green background")
-	fmt.Print(DefaultColor() + DefaultBg())
+	fmt.Print(ansi.DefaultColor() + ansi.DefaultBg())
 }
 
 func TestGreenWithBlueBg(t *testing.T) {
-	fmt.Print(Green() + BlueBg())
+	fmt.Print(ansi.Green() + ansi.BlueBg())
 	fmt.Println("This should be green with a blue background")
-	fmt.Print(DefaultColor() + DefaultBg())
+	fmt.Print(ansi.DefaultColor() + ansi.DefaultBg())
 }
 
 func TestCyanWithMagentaBg(t *testing.T) {
-	fmt.Print(Cyan() + MagentaBg())
+	fmt.Print(ansi.Cyan() + ansi.MagentaBg())
 	fmt.Println("This should be cyan with a magenta background")
-	fmt.Print(DefaultColor() + DefaultBg())
+	fmt.Print(ansi.DefaultColor() + ansi.DefaultBg())
 }
 
 func TestMagentaWithCyanBg(t *testing.T) {
-	fmt.Print(Magenta() + CyanBg())
+	fmt.Print(ansi.Magenta() + ansi.CyanBg())
 	fmt.Println("This should be magenta with a cyan background")
-	fmt.Print(DefaultColor() + DefaultBg())
+	fmt.Print(ansi.DefaultColor() + ansi.DefaultBg())
 }

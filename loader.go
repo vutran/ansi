@@ -7,7 +7,7 @@ import (
 
 // cleanup clears the line and redisplays the cursor
 func cleanup() {
-	fmt.Println(EraseLine(2))
+	fmt.Print(EraseLine(2))
 	fmt.Print(ShowCursor())
 }
 
