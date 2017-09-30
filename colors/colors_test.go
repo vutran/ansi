@@ -1,72 +1,73 @@
-package colors
+package colors_test
 
 import (
 	"fmt"
+	"github.com/vutran/ansi/colors"
 	"testing"
 )
 
 const emptySpace = "               "
 
 func TestBlack(t *testing.T) {
-	fmt.Println(Black("This is black"))
+	fmt.Println(colors.Black("This is black"))
 }
 
 func TestRed(t *testing.T) {
-	fmt.Println(Red("This is red"))
+	fmt.Println(colors.Red("This is red"))
 }
 
 func TestGreen(t *testing.T) {
-	fmt.Println(Green("This is green"))
+	fmt.Println(colors.Green("This is green"))
 }
 
 func TestYellow(t *testing.T) {
-	fmt.Println(Yellow("This is yellow"))
+	fmt.Println(colors.Yellow("This is yellow"))
 }
 
 func TestBlue(t *testing.T) {
-	fmt.Println(Blue("This is blue"))
+	fmt.Println(colors.Blue("This is blue"))
 }
 
 func TestMagenta(t *testing.T) {
-	fmt.Println(Magenta("This is magenta"))
+	fmt.Println(colors.Magenta("This is magenta"))
 }
 
 func TestCyan(t *testing.T) {
-	fmt.Println(Cyan("This is cyan"))
+	fmt.Println(colors.Cyan("This is cyan"))
 }
 
 func TestWhite(t *testing.T) {
-	fmt.Println(White("This is white"))
+	fmt.Println(colors.White("This is white"))
 }
 
 func TestBlackBg(t *testing.T) {
-	fmt.Println(BlackBg(emptySpace))
+	fmt.Println(colors.BlackBg(emptySpace))
 }
 
 func TestRedBg(t *testing.T) {
-	fmt.Println(RedBg(emptySpace))
+	fmt.Println(colors.RedBg(emptySpace))
 }
 
 func TestGreenBg(t *testing.T) {
-	fmt.Println(GreenBg(emptySpace))
+	fmt.Println(colors.GreenBg(emptySpace))
 }
 
 func TestYellowBg(t *testing.T) {
-	fmt.Println(YellowBg(emptySpace))
+	fmt.Println(colors.YellowBg(emptySpace))
 }
 
 func TestBlueBg(t *testing.T) {
-	fmt.Println(BlueBg(emptySpace))
+	fmt.Println(colors.BlueBg(emptySpace))
 }
 
 func TestMagentaBg(t *testing.T) {
-	fmt.Println(MagentaBg(emptySpace))
+	fmt.Println(colors.MagentaBg(emptySpace))
 }
 
 func TestCyanBg(t *testing.T) {
-	fmt.Println(CyanBg(emptySpace))
+	fmt.Println(colors.CyanBg(emptySpace))
 }
 
 func TestWhiteBg(t *testing.T) {
-	fmt.Println(WhiteBg(emptySpace))
+	fmt.Println(colors.WhiteBg(emptySpace))
 }

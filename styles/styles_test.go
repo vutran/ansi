@@ -1,26 +1,27 @@
-package styles
+package styles_test
 
 import (
 	"fmt"
+	"github.com/vutran/ansi/styles"
 	"testing"
 )
 
 func TestBold(t *testing.T) {
-	fmt.Println(Bold("Hello, world!"))
+	fmt.Println(styles.Bold("Bold"))
 }
 
 func TestFaint(t *testing.T) {
-	fmt.Println(Faint("Hello, world!"))
+	fmt.Println(styles.Faint("Faint"))
 }
 
 func TestItalic(t *testing.T) {
-	fmt.Println(Italic("Hello, world!"))
+	fmt.Println(styles.Italic("Italic"))
 }
 
 func TestUnderline(t *testing.T) {
-	fmt.Println(Underline("Hello, world!"))
+	fmt.Println(styles.Underline("Underline"))
 }
 
 func TestCrossedOut(t *testing.T) {
-	fmt.Println(CrossedOut("Hello, world!"))
+	fmt.Println(styles.CrossedOut("CrossedOut"))
 }
