@@ -7,7 +7,8 @@ import (
 )
 
 func main() {
-	s := ansi.Loader(loaders.Dots, "Loading")
+	s := ansi.Loader(loaders.Dots)
+	s.SetValue("Loading")
 	s.Start()
 	time.Sleep(2 * time.Second)
 	s.SetValue("Finalizing...")
