@@ -1,3 +1,6 @@
+/*
+Apply custom color to your string
+*/
 package colors
 
 import (

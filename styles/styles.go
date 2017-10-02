@@ -1,3 +1,6 @@
+/*
+Apply custom font treatment to your strings
+*/
 package styles
 
 import (
