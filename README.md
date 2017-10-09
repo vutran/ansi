@@ -58,6 +58,8 @@ func main() {
 
 Display an animated progress loader.
 
+![loader](loader.gif)
+
 ```go
 package main
 
